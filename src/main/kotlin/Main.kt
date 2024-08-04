@@ -30,7 +30,7 @@ private fun pollModbus(
 
         while (master.isConnected) {
 
-            val inputPowerAnswer = master.readMultipleRegisters(DEFAULT_DEVICE_ID,30354, 8)
+            val inputPowerAnswer = master.readMultipleRegisters(DEFAULT_DEVICE_ID, 30354, 8)
 
             val batteryAnswer = master.readMultipleRegisters(DEFAULT_DEVICE_ID, 30368, 1)
 
